@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".activities.logAndReg.RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/tv_main_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Создайте аккаунт"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_login_reg"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Введите логин"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_reg" />
+
+    <EditText
+        android:id="@+id/ed_email_reg"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Введите почту"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_login_reg"/>
+
+    <EditText
+        android:id="@+id/ed_password_reg"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_email_reg" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ed_password_reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_toLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
